@@ -3,7 +3,8 @@ package guru.springframework.sfgpetclinic.model;
 import java.time.LocalDate;
 
 /**
- *
+ * @author diego
+ * @since 28/12/2019
  */
 public class Visit extends BaseEntity {
 
