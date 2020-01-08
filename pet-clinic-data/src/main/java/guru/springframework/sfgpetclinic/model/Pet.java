@@ -2,6 +2,8 @@ package guru.springframework.sfgpetclinic.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Set;
 
 /**
  * @author diego
@@ -24,6 +26,9 @@ public class Pet extends BaseEntity{
 
     @Column(name = "birth_data")
     private LocalDate birthDate;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visits = new HashMap<>();
 
     public String getName() {
         return name;
