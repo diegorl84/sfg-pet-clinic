@@ -81,7 +81,6 @@
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>ro.isdc.wro4j</groupId>
                 <artifactId>wro4j-maven-plugin</artifactId>
@@ -115,8 +114,5 @@
                 </dependencies>
             </plugin>
         </plugins>
-
-
-
     </build>
 </project>
